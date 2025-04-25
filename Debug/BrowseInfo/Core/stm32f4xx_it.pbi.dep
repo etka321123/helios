@@ -1,4 +1,5 @@
-C:\source\helios\Debug\BrowseInfo\main.pbi: C:\source\helios\main.c \
+C:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.pbi: \
+  C:\source\helios\stm32f4xx_it.c C:\source\helios\stm32f4xx_it.h \
   C:\source\helios\stm32f4xx.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\CMSIS\Core\Include\core_cm4.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
@@ -12,4 +13,4 @@ C:\source\helios\Debug\BrowseInfo\main.pbi: C:\source\helios\main.c \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\CMSIS\Core\Include\cmsis_iccarm.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\iccarm_builtin.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\CMSIS\Core\Include\mpu_armv7.h \
-  C:\source\helios\system_stm32f4xx.h
+  C:\source\helios\system_stm32f4xx.h C:\source\helios\main.h

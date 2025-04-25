@@ -24,10 +24,28 @@ rule PDBLINK
 
 
 #Build steps
+build C$:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\source\helios\stm32f4xx_it.c -xcl_file C$:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.xcl -macro_file C$:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\source\helios\stm32f4xx_it.c -D STM32F40_41xxx -o C$:\source\helios\Debug\Obj\Core --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.tmp
+  rspfile_name = C$:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.xcl.rsp
+
+build C$:\source\helios\Debug\BrowseInfo\Core\system_stm32f4xx.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\source\helios\system_stm32f4xx.c -xcl_file C$:\source\helios\Debug\BrowseInfo\Core\system_stm32f4xx.xcl -macro_file C$:\source\helios\Debug\BrowseInfo\Core\system_stm32f4xx.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\source\helios\system_stm32f4xx.c -D STM32F40_41xxx -o C$:\source\helios\Debug\Obj\Core --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\source\helios\Debug\BrowseInfo\Core\system_stm32f4xx.tmp
+  rspfile_name = C$:\source\helios\Debug\BrowseInfo\Core\system_stm32f4xx.xcl.rsp
+
 build C$:\source\helios\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
   xclcommand = -source_file C$:\source\helios\main.c -xcl_file C$:\source\helios\Debug\BrowseInfo\main.xcl -macro_file C$:\source\helios\Debug\BrowseInfo\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = C$:\source\helios\main.c -o C$:\source\helios\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\source\helios\Debug\BrowseInfo\main.tmp
+  flags = C$:\source\helios\main.c -D STM32F40_41xxx -o C$:\source\helios\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\source\helios\Debug\BrowseInfo\main.tmp
   rspfile_name = C$:\source\helios\Debug\BrowseInfo\main.xcl.rsp
+
+build C$:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.pbi : INDEXER C$:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.xcl |  $
+C$:\source\helios\stm32f4xx_it.c
+  flags = -out=C$:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.pbi -f C$:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.xcl
+
+build C$:\source\helios\Debug\BrowseInfo\Core\system_stm32f4xx.pbi : INDEXER C$:\source\helios\Debug\BrowseInfo\Core\system_stm32f4xx.xcl |  $
+C$:\source\helios\system_stm32f4xx.c
+  flags = -out=C$:\source\helios\Debug\BrowseInfo\Core\system_stm32f4xx.pbi -f C$:\source\helios\Debug\BrowseInfo\Core\system_stm32f4xx.xcl
 
 build C$:\source\helios\Debug\BrowseInfo\main.pbi : INDEXER C$:\source\helios\Debug\BrowseInfo\main.xcl |  $
 C$:\source\helios\main.c
@@ -36,6 +54,8 @@ C$:\source\helios\main.c
 build C$:\source\helios\Debug\BrowseInfo\helios.pbw : MAKEBROWSE C$:\source\helios\Debug\BrowseInfo\helios.pbd
   flags = C$:\source\helios\Debug\BrowseInfo\helios.pbd -output C$:\source\helios\Debug\BrowseInfo\helios.pbw
 
-build C$:\source\helios\Debug\BrowseInfo\helios.pbd : PDBLINK C$:\source\helios\Debug\BrowseInfo\main.pbi
-  flags = -M C$:\source\helios\Debug\BrowseInfo\helios.pbd C$:\source\helios\Debug\BrowseInfo\main.pbi
+build C$:\source\helios\Debug\BrowseInfo\helios.pbd : PDBLINK C$:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.pbi |  $
+C$:\source\helios\Debug\BrowseInfo\Core\system_stm32f4xx.pbi $
+C$:\source\helios\Debug\BrowseInfo\main.pbi
+  flags = -M C$:\source\helios\Debug\BrowseInfo\helios.pbd C$:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.pbi C$:\source\helios\Debug\BrowseInfo\Core\system_stm32f4xx.pbi C$:\source\helios\Debug\BrowseInfo\main.pbi
 

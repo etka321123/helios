@@ -1,13 +1,13 @@
-"C:\source\helios\main.c"
+"C:\source\helios\stm32f4xx_it.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\source\helios\Debug\BrowseInfo\main.pbi.dep
+C:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.pbi.dep
 -o
-C:\source\helios\Debug\BrowseInfo\main.pbi
+C:\source\helios\Debug\BrowseInfo\Core\stm32f4xx_it.pbi
 -I
 C:\source\helios
 -I
