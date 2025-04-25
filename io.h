@@ -10,6 +10,9 @@ typedef enum {
 
 typedef enum {
     IO_LED_ORANGE = 0,
+    //IO_LED_GREEN,
+    //IO_LED_RED,
+    //IO_LED_BLUE,
     IO_MAX
 } IO_Index;
 
