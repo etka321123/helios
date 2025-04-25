@@ -107881,13 +107881,439 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@85@macro@LED_PIN",
+    "ID": "c:io.c@io_table",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "io_table",
+    "location": {
+      "column": "19",
+      "line": "3",
+      "path": "C:\\source\\helios\\io.c"
+    },
+    "name": "io_table",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IO_Init(IO_Index)",
+    "location": {
+      "column": "6",
+      "line": "7",
+      "path": "C:\\source\\helios\\io.c"
+    },
+    "name": "IO_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:io.c@171@F@IO_Init@io",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "io",
+    "location": {
+      "column": "10",
+      "line": "10",
+      "path": "C:\\source\\helios\\io.c"
+    },
+    "name": "io",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Write",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IO_Write(IO_Index, IO_State)",
+    "location": {
+      "column": "6",
+      "line": "23",
+      "path": "C:\\source\\helios\\io.c"
+    },
+    "name": "IO_Write",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:io.c@699@F@IO_Write@io",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "io",
+    "location": {
+      "column": "10",
+      "line": "26",
+      "path": "C:\\source\\helios\\io.c"
+    },
+    "name": "io",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Toggle",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IO_Toggle(IO_Index)",
+    "location": {
+      "column": "6",
+      "line": "34",
+      "path": "C:\\source\\helios\\io.c"
+    },
+    "name": "IO_Toggle",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:io.c@920@F@IO_Toggle@io",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "io",
+    "location": {
+      "column": "10",
+      "line": "37",
+      "path": "C:\\source\\helios\\io.c"
+    },
+    "name": "io",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Read",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "IO_State IO_Read(IO_Index)",
+    "location": {
+      "column": "10",
+      "line": "41",
+      "path": "C:\\source\\helios\\io.c"
+    },
+    "name": "IO_Read",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:io.c@1066@F@IO_Read@io",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "io",
+    "location": {
+      "column": "10",
+      "line": "44",
+      "path": "C:\\source\\helios\\io.c"
+    },
+    "name": "io",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:io.h@22@macro@IO_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IO_H",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@IO_State",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@IO_State@IO_LOW",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "IO_LOW",
+        "location": {
+          "column": "5",
+          "line": "7",
+          "path": "C:\\source\\helios\\io.h"
+        },
+        "name": "IO_LOW",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@IO_State@IO_HIGH",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "IO_HIGH",
+        "location": {
+          "column": "5",
+          "line": "8",
+          "path": "C:\\source\\helios\\io.h"
+        },
+        "name": "IO_HIGH",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "6",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@IO_State",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum IO_State",
+    "location": {
+      "column": "3",
+      "line": "9",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_State",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@IO_Index",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@IO_Index@IO_LED_ORANGE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "IO_LED_ORANGE",
+        "location": {
+          "column": "5",
+          "line": "12",
+          "path": "C:\\source\\helios\\io.h"
+        },
+        "name": "IO_LED_ORANGE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@IO_Index@IO_MAX",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "IO_MAX",
+        "location": {
+          "column": "5",
+          "line": "13",
+          "path": "C:\\source\\helios\\io.h"
+        },
+        "name": "IO_MAX",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "11",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@IO_Index",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum IO_Index",
+    "location": {
+      "column": "3",
+      "line": "14",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_Index",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@IO_t",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@IO_t@FI@port",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "port",
+        "location": {
+          "column": "19",
+          "line": "17",
+          "path": "C:\\source\\helios\\io.h"
+        },
+        "name": "port",
+        "origin": "user_include",
+        "scope": "_anonymous_io_h_16_9"
+      },
+      {
+        "ID": "c:@SA@IO_t@FI@pin",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pin",
+        "location": {
+          "column": "14",
+          "line": "18",
+          "path": "C:\\source\\helios\\io.h"
+        },
+        "name": "pin",
+        "origin": "user_include",
+        "scope": "_anonymous_io_h_16_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@IO_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct IO_t",
+    "location": {
+      "column": "3",
+      "line": "19",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_t",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IO_Init(IO_Index)",
+    "location": {
+      "column": "6",
+      "line": "21",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IO_Init(IO_Index)",
+    "location": {
+      "column": "6",
+      "line": "21",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Write",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IO_Write(IO_Index, IO_State)",
+    "location": {
+      "column": "6",
+      "line": "22",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_Write",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Write",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IO_Write(IO_Index, IO_State)",
+    "location": {
+      "column": "6",
+      "line": "22",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_Write",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Toggle",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IO_Toggle(IO_Index)",
+    "location": {
+      "column": "6",
+      "line": "23",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_Toggle",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Toggle",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IO_Toggle(IO_Index)",
+    "location": {
+      "column": "6",
+      "line": "23",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_Toggle",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Read",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "IO_State IO_Read(IO_Index)",
+    "location": {
+      "column": "10",
+      "line": "24",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_Read",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IO_Read",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "IO_State IO_Read(IO_Index)",
+    "location": {
+      "column": "10",
+      "line": "24",
+      "path": "C:\\source\\helios\\io.h"
+    },
+    "name": "IO_Read",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@104@macro@LED_PIN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED_PIN",
     "location": {
       "column": "9",
-      "line": "3",
+      "line": "5",
       "path": "C:\\source\\helios\\main.c"
     },
     "name": "LED_PIN",
@@ -107901,7 +108327,7 @@
     "display": "void delay(volatile uint32_t)",
     "location": {
       "column": "6",
-      "line": "5",
+      "line": "7",
       "path": "C:\\source\\helios\\main.c"
     },
     "name": "delay",
@@ -107915,7 +108341,7 @@
     "display": "void init(void)",
     "location": {
       "column": "6",
-      "line": "12",
+      "line": "14",
       "path": "C:\\source\\helios\\main.c"
     },
     "name": "init",
@@ -107929,7 +108355,7 @@
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "24",
+      "line": "19",
       "path": "C:\\source\\helios\\main.c"
     },
     "name": "main",

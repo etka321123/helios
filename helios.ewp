@@ -2106,6 +2106,15 @@
             <name>$PROJ_DIR$\system_stm32f4xx.h</name>
         </file>
     </group>
+    <group>
+        <name>Drivers</name>
+        <file>
+            <name>$PROJ_DIR$\io.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\io.h</name>
+        </file>
+    </group>
     <file>
         <name>$PROJ_DIR$\main.c</name>
     </file>
