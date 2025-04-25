@@ -9,19 +9,14 @@ typedef enum {
 } IO_State;
 
 typedef enum {
-    IO_LED_ORANGE = 0,
-    //IO_LED_GREEN,
-    //IO_LED_RED,
-    //IO_LED_BLUE,
-    IO_MAX
+    IO_LED_ORANGE = 0, // PD13
+    IO_LED_GREEN,      // PD12
+    IO_LED_RED,        // PD14
+    IO_LED_BLUE,       // PD15
+    IO_LED_MAX
 } IO_Index;
 
-typedef struct {
-    GPIO_TypeDef *port;
-    uint16_t pin;
-} IO_t;
-
-void IO_Init(IO_Index idx);
+void IO_Init(void);  // Tüm LED’leri init eder
 void IO_Write(IO_Index idx, IO_State state);
 void IO_Toggle(IO_Index idx);
 IO_State IO_Read(IO_Index idx);

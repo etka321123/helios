@@ -2,18 +2,17 @@
 #include <stdint.h>
 #include "io.h"
 
-#define LED_PIN 13
+void delay(volatile uint32_t t) {
+    while (t--);
+}
 
-void delay(volatile uint32_t time) {
-    while (time--) {
-        // NOP wait for one cycle.
-        __NOP();
-    }
+void delay_1s(void) {
+    delay(4000000); // Yaklasik 1 saniye @16MHz
 }
 
 void init()
 {
-  IO_Init(IO_LED_ORANGE); 
+  IO_Init();
 }
 
 void main()
@@ -21,10 +20,12 @@ void main()
   init();
   
   while (1) {
-        IO_Write(IO_LED_ORANGE, IO_HIGH);
-        delay(5000000);
-        IO_Write(IO_LED_ORANGE, IO_LOW);
-        delay(5000000);
+      for (IO_Index i = IO_LED_ORANGE; i < IO_LED_MAX; i++) {
+            IO_Write(i, IO_HIGH);  
+            delay_1s();
+            IO_Write(i, IO_LOW);    // LED’i söndür
+            delay_1s();
+        }
     }
   
 }
