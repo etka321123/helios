@@ -36,3 +36,7 @@
 256	410	7672688331011588	C:/source/helios/Debug/Exe/helios.out	afd0e92725597cbc
 2	409	7672689378898797	C:/source/helios/Debug/Obj/main.o	7f831c8d634c88ff
 421	574	7672689380591248	C:/source/helios/Debug/Exe/helios.out	afd0e92725597cbc
+3	82	7672720635349913	C:/source/helios/Debug/Obj/Core/startup_stm32f40xx.o	7a93f0b15a0f3c9
+19	532	7672720639689899	C:/source/helios/Debug/Obj/main.o	7f831c8d634c88ff
+12	603	7672720640428597	C:/source/helios/Debug/Obj/Drivers/io.o	7d29e8f4bdfb6582
+620	812	7672720642552910	C:/source/helios/Debug/Exe/helios.out	b82630a9df3e2a43
